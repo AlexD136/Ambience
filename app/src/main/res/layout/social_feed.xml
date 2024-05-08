@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/apertureLogoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/aperturelogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Ambience -->
+    <TextView
+        android:id="@+id/apertureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/apertureLogoImageView"
+        android:text="@string/ambience"
+        android:textColor="@color/logo"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Community Through Photography -->
+    <TextView
+        android:id="@+id/communityThroughPhotographyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apertureTextView"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/apertureLogoImageView"
+        android:text="@string/caption"
+        android:textColor="@color/logo"
+        android:textSize="14sp"/>
+
+    <!-- Social Feed -->
+    <TextView
+        android:id="@+id/socialFeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_feed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Daily Challenge -->
+    <TextView
+        android:id="@+id/dailyChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_challenge"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/socialFeedTextView" />
+
+    <!-- Profile -->
+    <TextView
+        android:id="@+id/profileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/dailyChallengeTextView"/>
+
+    <!-- Menu Image -->
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/menuimage"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Profile Picture Image -->
+    <ImageView
+        android:id="@+id/profpicImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profpic"
+        android:layout_marginTop="165dp"
+        android:layout_marginStart="82dp"
+        android:layout_toEndOf="@id/menuImageView"/>
+
+    <!-- Username TextView -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="175dp"
+        android:layout_toEndOf="@id/profpicImageView"
+        android:background="@drawable/textbox"
+        android:text="@string/user"
+        android:textColor="@color/logo"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Large textbox containing friends list -->
+    <LinearLayout
+        android:id="@+id/friendList"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/textbox">
+
+        <!-- Friend 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_1"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+                android:textColor="@color/active_green"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Friend 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_2"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inactive"
+                android:textColor="@color/inactive_red"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Friend 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_3"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+                android:textColor="@color/active_green"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <!-- Friend 4 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_4"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inactive"
+                android:textColor="@color/inactive_red"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Search Box -->
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/friendList"
+        android:background="@drawable/textbox"
+        android:hint="@string/search"
+        android:padding="8dp" />
+
+    <!-- Compose Message Button -->
+
+    <Button
+        android:id="@+id/composeMessageButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/comp_mess"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@id/friendList"
+        android:textColor="@color/logo"
+        android:padding="12dp"/>
+    <!-- Raid Ad Image -->
+    <ImageView
+        android:id="@+id/raidAdImageView"
+        android:layout_width="match_parent"
+        android:src="@drawable/raidad"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

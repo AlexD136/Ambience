@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ambience</string>
+    <string name="ambience">Ambience</string>
+    <string name="caption">Community Through Photography</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="log_in">Log-In</string>
+    <string name="new_user">New User? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgotten_password">Forgotten Password?</string>
+    <string name="social_feed">Social Feed</string>
+    <string name="daily_challenge">Daily Challenge</string>
+    <string name="profile">Profile</string>
+    <string name="new_chall">New Challenge In:</string>
+    <string name="countdown">24:00:00</string>
+    <string name="prompt">The challenge today is to take a photo that shows:</string>
+    <string name="challenge">Something that both is and is not</string>
+    <string name="user">Test_User_123</string>
+    <string name="friend_1">Friend 1</string>
+    <string name="friend_2">Friend 2</string>
+    <string name="friend_3">Friend 3</string>
+    <string name="friend_4">Friend 4</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="search">Search Username</string>
+    <string name="comp_mess">Compose Message</string>
+</resources>

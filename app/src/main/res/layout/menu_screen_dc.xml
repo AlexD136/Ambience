@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/apertureLogoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/aperturelogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Ambience -->
+    <TextView
+        android:id="@+id/apertureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/apertureLogoImageView"
+        android:text="@string/ambience"
+        android:textColor="@color/logo"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Community Through Photography -->
+    <TextView
+        android:id="@+id/communityThroughPhotographyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apertureTextView"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/apertureLogoImageView"
+        android:text="@string/caption"
+        android:textColor="@color/logo"
+        android:textSize="14sp"/>
+
+    <!-- Social Feed -->
+    <TextView
+        android:id="@+id/socialFeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_feed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Daily Challenge -->
+    <TextView
+        android:id="@+id/dailyChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_challenge"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/socialFeedTextView" />
+
+    <!-- Profile -->
+    <TextView
+        android:id="@+id/profileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/logo"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/dailyChallengeTextView"/>
+
+    <!-- Menu Image -->
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/menuimage"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- New Challenge-->
+    <TextView
+        android:id="@+id/newChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="180dp"
+        android:layout_toEndOf="@+id/menuImageView"
+        android:text="@string/new_chall"
+        android:textColor="@color/logo"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <!-- Countdown -->
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/countdown"
+        android:textSize="14sp"/>
+
+    <!-- Today's Challenge Prompt -->
+    <TextView
+        android:id="@+id/todaysChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt"
+        android:textSize="16sp"
+        android:textColor="@color/logo"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Challenge -->
+    <TextView
+        android:id="@+id/ChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/challenge"
+        android:textSize="16sp"
+        android:textColor="@color/logo"
+        android:textStyle="bold"
+        android:layout_below="@id/todaysChallengeTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textbox_with_outline"/>
+
+    <!-- Upload Box Image -->
+    <ImageView
+        android:id="@+id/uploadBoxImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChallengeTextView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/uploadbox"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Raid Ad Image -->
+    <ImageView
+        android:id="@+id/raidAdImageView"
+        android:layout_width="match_parent"
+        android:src="@drawable/raidad"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"/>
+</RelativeLayout>
