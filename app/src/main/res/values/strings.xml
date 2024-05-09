@@ -25,4 +25,10 @@
     <string name="inactive">Inactive</string>
     <string name="search">Search Username</string>
     <string name="comp_mess">Compose Message</string>
+    <string name="fr_count">Total Friends:</string>
+    <string name="fr_count_val">054</string>
+    <string name="recent">Recent Posts</string>
+    <string name="react">React</string>
+    <string name="comment">Comment</string>
+    <string name="report">Report</string>
 </resources>

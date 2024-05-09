@@ -111,7 +111,7 @@
         android:textSize="16sp"
         android:textStyle="bold"/>
 
-    <!-- Large textbox containing friends list -->
+    <!-- Friend List  -->
     <LinearLayout
         android:id="@+id/friendList"
         android:layout_width="175dp"
@@ -144,7 +144,6 @@
         </LinearLayout>
 
         <!-- Friend 2 -->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -168,7 +167,6 @@
         </LinearLayout>
 
         <!-- Friend 3 -->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -190,8 +188,8 @@
                 android:textSize="16sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
-        <!-- Friend 4 -->
 
+        <!-- Friend 4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,7 +214,6 @@
     </LinearLayout>
 
     <!-- Search Box -->
-
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="200dp"
@@ -229,7 +226,6 @@
         android:padding="8dp" />
 
     <!-- Compose Message Button -->
-
     <Button
         android:id="@+id/composeMessageButton"
         android:layout_width="200dp"
@@ -240,6 +236,110 @@
         android:layout_toEndOf="@id/friendList"
         android:textColor="@color/logo"
         android:padding="12dp"/>
+
+    <!-- Total Friends -->
+    <TextView
+        android:id="@+id/textTotalFriendsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fr_count"
+        android:textSize="18sp"
+        android:textColor="@color/logo"
+        android:layout_toEndOf="@id/friendList"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="370dp"/>
+
+    <!-- Total Friends Count -->
+    <TextView
+        android:id="@+id/textTotalFriendsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fr_count_val"
+        android:textSize="18sp"
+        android:textColor="@color/logo"
+        android:layout_toEndOf="@id/textTotalFriendsLabel"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="370dp"/>
+
+    <!-- Mail Icon -->
+    <ImageView
+        android:id="@+id/mailIconImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/mailicon"
+        android:layout_toEndOf="@id/textTotalFriendsCount"
+        android:layout_alignTop="@id/composeMessageButton"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"/>
+
+    <!-- Recent Posts Box -->
+    <LinearLayout
+        android:id="@+id/recentPosts"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="75dp"
+        android:background="@drawable/textbox">
+
+        <!-- Recent Posts -->
+        <TextView
+            android:id="@+id/textRecentPosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recent"
+            android:gravity="center"
+            android:textColor="@color/logo"
+            android:textSize="18sp"/>
+
+        <!-- Example Post -->
+        <ImageView
+            android:id="@+id/examplePost"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:src="@drawable/examplepost"
+            android:scaleType="centerInside"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textReact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/react"
+                android:textColor="@color/logo"
+                android:gravity="center"
+                android:background="@drawable/textbox"/>
+
+            <TextView
+                android:id="@+id/textComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/comment"
+                android:textColor="@color/logo"
+                android:gravity="center"
+                android:background="@drawable/textbox"/>
+
+            <TextView
+                android:id="@+id/textReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report"
+                android:textColor="@color/logo"
+                android:gravity="center"
+                android:background="@drawable/textbox"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
     <!-- Raid Ad Image -->
     <ImageView
         android:id="@+id/raidAdImageView"
