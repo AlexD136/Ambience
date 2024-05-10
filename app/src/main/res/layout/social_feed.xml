@@ -226,8 +226,8 @@
         android:padding="8dp" />
 
     <!-- Compose Message Button -->
-    <Button
-        android:id="@+id/composeMessageButton"
+    <TextView
+        android:id="@+id/composeMessageText"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:text="@string/comp_mess"
@@ -235,7 +235,11 @@
         android:layout_marginTop="300dp"
         android:layout_toEndOf="@id/friendList"
         android:textColor="@color/logo"
-        android:padding="12dp"/>
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/textbox"
+        android:padding="12dp"
+        android:gravity="center"/>
 
     <!-- Total Friends -->
     <TextView
@@ -268,7 +272,7 @@
         android:layout_height="50dp"
         android:src="@drawable/mailicon"
         android:layout_toEndOf="@id/textTotalFriendsCount"
-        android:layout_alignTop="@id/composeMessageButton"
+        android:layout_alignTop="@id/composeMessageText"
         android:layout_marginTop="60dp"
         android:layout_marginStart="10dp"/>
 

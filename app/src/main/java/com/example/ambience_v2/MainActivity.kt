@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val loginButton = findViewById<Button>(R.id.loginButton)
+        val loginButton = findViewById<TextView>(R.id.loginButton)
         loginButton.setOnClickListener {
             val usernameEditText = findViewById<EditText>(R.id.usernameEditText)
             val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
@@ -36,6 +37,11 @@ class MainActivity : AppCompatActivity() {
             } else {
                 // Show error message or handle incorrect credentials
             }
+        }
+        val signUpTextView = findViewById<TextView>(R.id.signUpTextView)
+        signUpTextView.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
         }
     }
 }

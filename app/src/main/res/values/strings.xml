@@ -31,4 +31,12 @@
     <string name="react">React</string>
     <string name="comment">Comment</string>
     <string name="report">Report</string>
+    <string name="welcome">Welcome Aboard</string>
+    <string name="email">Email Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="con_pass">Confirm Password</string>
+    <string name="phone_ver">Click Here For Phone Verification</string>
+    <string name="ter_con">Terms and Conditions</string>
+    <string name="tos">Click Here To Agree To The ToS</string>
+    <string name="account">Already Have An Account? </string>
 </resources>

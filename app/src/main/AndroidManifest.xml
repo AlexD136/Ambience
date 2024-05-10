@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".MenuScreenDCActivity" />
         <activity android:name=".SocialFeedActivity"/>
+        <activity android:name=".SignUpActivity"/>
     </application>
 
 </manifest>
