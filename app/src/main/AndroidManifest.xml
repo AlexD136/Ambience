@@ -21,9 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuScreenDCActivity" />
+        <activity android:name=".MenuScreenDCActivity"/>
         <activity android:name=".SocialFeedActivity"/>
         <activity android:name=".SignUpActivity"/>
+        <activity android:name=".ProfileActivity"/>
     </application>
 
 </manifest>

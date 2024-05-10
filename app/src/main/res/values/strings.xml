@@ -39,4 +39,10 @@
     <string name="ter_con">Terms and Conditions</string>
     <string name="tos">Click Here To Agree To The ToS</string>
     <string name="account">Already Have An Account? </string>
+    <string name="rec_pho">Recent Photos</string>
+    <string name="reactions">Reactions</string>
+    <string name="comments">Comments</string>
+    <string name="streak">Current Streak: </string>
+    <string name="days">XXX Days</string>
+    <string name="ex_bio">Example Bio</string>
 </resources>

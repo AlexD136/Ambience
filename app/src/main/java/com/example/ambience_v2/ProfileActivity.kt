@@ -1,15 +1,15 @@
 package com.example.ambience_v2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import com.example.ambience_v2.R
+import androidx.appcompat.app.AppCompatActivity
 
-class SocialFeedActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.social_feed)
+        setContentView(R.layout.profile)
 
         val dailyChallengeTextView = findViewById<TextView>(R.id.dailyChallengeTextView)
 
@@ -19,12 +19,13 @@ class SocialFeedActivity : AppCompatActivity() {
             val intent = Intent(this, MenuScreenDCActivity::class.java)
             startActivity(intent)
         }
-        val profileTextView = findViewById<TextView>(R.id.profileTextView)
+
+        val socialFeedTextView = findViewById<TextView>(R.id.socialFeedTextView)
 
         // Set OnClickListener to the TextView
-        profileTextView.setOnClickListener {
+        socialFeedTextView.setOnClickListener {
             // When the TextView is clicked, start the SocialFeedActivity
-            val intent = Intent(this, ProfileActivity::class.java)
+            val intent = Intent(this, SocialFeedActivity::class.java)
             startActivity(intent)
         }
     }

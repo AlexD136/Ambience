@@ -19,5 +19,13 @@ class MenuScreenDCActivity : AppCompatActivity() {
             val intent = Intent(this, SocialFeedActivity::class.java)
             startActivity(intent)
         }
+        val profileTextView = findViewById<TextView>(R.id.profileTextView)
+
+        // Set OnClickListener to the TextView
+        profileTextView.setOnClickListener {
+            // When the TextView is clicked, start the SocialFeedActivity
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
