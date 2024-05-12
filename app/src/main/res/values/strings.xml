@@ -52,4 +52,8 @@
     <string name="p_set">Profile Settings</string>
     <string name="r_account">Reset Account</string>
     <string name="d_account">Delete Account</string>
+    <string name="b_friend">Block Friend</string>
+    <string name="d_friend">Delete Friend</string>
+    <string name="r_friend">Report Friend</string>
+    <string name="v_profile">View Profile</string>
 </resources>

@@ -4,32 +4,60 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Option 1: Block Friend -->
+    <!-- Block Friend -->
     <TextView
         android:id="@+id/blockFriendTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Block Friend"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:padding="8dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/b_friend"
+        android:textColor="@color/logo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Option 2: Delete Friend -->
+    <!-- Delete Friend -->
     <TextView
         android:id="@+id/deleteFriendTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete Friend"
+        android:text="@string/d_friend"
         android:textSize="16sp"
-        android:textColor="@android:color/black"
+        android:textColor="@color/logo"
         android:padding="8dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/blockFriendTextView"/>
+
+    <!-- Report Friend -->
+    <TextView
+        android:id="@+id/reportFriendTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_friend"
+        android:textSize="16sp"
+        android:textColor="@color/logo"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deleteFriendTextView"/>
+
+    <!-- View Profile -->
+    <TextView
+        android:id="@+id/viewProfileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v_profile"
+        android:textSize="16sp"
+        android:textColor="@color/logo"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportFriendTextView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
