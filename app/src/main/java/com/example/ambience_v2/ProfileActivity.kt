@@ -2,8 +2,11 @@ package com.example.ambience_v2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -11,8 +14,21 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile)
 
-        val dailyChallengeTextView = findViewById<TextView>(R.id.dailyChallengeTextView)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
+        val menuImageView = findViewById<ImageView>(R.id.menuImageView)
+        val backArrow = findViewById<ImageView>(R.id.backArrow)
 
+        menuImageView.setOnClickListener {
+            // Open sidebar menu
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
+        backArrow.setOnClickListener {
+            // Close sidebar menu
+            drawerLayout.closeDrawer(GravityCompat.START)
+        }
+
+        val dailyChallengeTextView = findViewById<TextView>(R.id.dailyChallengeTextView)
         // Set OnClickListener to the TextView
         dailyChallengeTextView.setOnClickListener {
             // When the TextView is clicked, start the SocialFeedActivity

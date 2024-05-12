@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Main content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <!-- Logo -->
     <ImageView
@@ -210,7 +216,109 @@
         android:id="@+id/raidAdImageView"
         android:layout_width="match_parent"
         android:src="@drawable/raidad"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:scaleType="fitXY"/>
 </RelativeLayout>
+
+    <!-- Sidebar menu -->
+    <LinearLayout
+        android:id="@+id/sideMenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Back Arrow -->
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/backarrow" />
+
+            <!-- Options Menu -->
+            <TextView
+                android:id="@+id/optionsMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opt_menu"
+                android:textSize="16sp"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/logo"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- Upgrade to Premium -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/up_to_p"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Settings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Social Visibility Settings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_v_set"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Profile Settings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/p_set"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Reset Account -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/r_account"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Delete Account -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d_account"
+            android:textSize="16sp"
+            android:textColor="@color/logo"
+            android:padding="16dp" />
+
+        <!-- Raid Ad Image -->
+        <ImageView
+            android:id="@+id/banRaidAdImageView"
+            android:layout_width="match_parent"
+            android:src="@drawable/raidad"
+            android:layout_height="60dp"
+            android:layout_marginTop="285dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
