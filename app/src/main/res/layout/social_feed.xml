@@ -134,6 +134,7 @@
             android:padding="8dp">
 
             <TextView
+                android:id="@+id/friend1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/friend_1"
@@ -157,6 +158,7 @@
             android:padding="8dp">
 
             <TextView
+                android:id="@+id/friend2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/friend_2"
@@ -180,6 +182,7 @@
             android:padding="8dp">
 
             <TextView
+                android:id="@+id/friend3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/friend_3"
@@ -203,6 +206,7 @@
             android:padding="8dp">
 
             <TextView
+                android:id="@+id/friend4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/friend_4"

@@ -7,6 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import android.view.LayoutInflater
+import android.view.MenuItem
+import android.view.View
+import android.widget.LinearLayout
+import androidx.appcompat.app.AlertDialog
 import com.example.ambience_v2.R
 
 class SocialFeedActivity : AppCompatActivity() {
@@ -14,34 +19,57 @@ class SocialFeedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.social_feed)
 
+        //Fetches the location of friend1
+        val friendListLayout = findViewById<LinearLayout>(R.id.friendList)
+        val friend1 = friendListLayout.findViewById<TextView>(R.id.friend1)
+
+        //Calls the pop up menu function
+        friend1.setOnClickListener { view: View ->
+            showPopupMenu(view)
+        }
+
+        //Fetches the location of ids required
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
         val menuImageView = findViewById<ImageView>(R.id.menuImageView)
         val backArrow = findViewById<ImageView>(R.id.backArrow)
 
+        //Opens sidebar menu
         menuImageView.setOnClickListener {
-            // Open sidebar menu
             drawerLayout.openDrawer(GravityCompat.START)
         }
 
+        //Closes sidebar menu
         backArrow.setOnClickListener {
-            // Close sidebar menu
             drawerLayout.closeDrawer(GravityCompat.START)
         }
+
+        //Fetches the location of dailyChallengeTextView
         val dailyChallengeTextView = findViewById<TextView>(R.id.dailyChallengeTextView)
 
-        // Set OnClickListener to the TextView
+        //When clicked, starts the activity
         dailyChallengeTextView.setOnClickListener {
-            // When the TextView is clicked, start the SocialFeedActivity
             val intent = Intent(this, MenuScreenDCActivity::class.java)
             startActivity(intent)
         }
+
+        //Fetches the location of profileTextView
         val profileTextView = findViewById<TextView>(R.id.profileTextView)
 
-        // Set OnClickListener to the TextView
+        //When clicked, starts the activity
         profileTextView.setOnClickListener {
-            // When the TextView is clicked, start the SocialFeedActivity
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    //This function is responsible for handling the pop-up menu
+    private fun showPopupMenu(view: View) {
+        val inflater = LayoutInflater.from(this)
+        val popupView = inflater.inflate(R.layout.f_op_menu, null)
+
+        val popupMenuBuilder = AlertDialog.Builder(this)
+        popupMenuBuilder.setView(popupView)
+        val popupMenu = popupMenuBuilder.create()
+        popupMenu.show()
     }
 }
