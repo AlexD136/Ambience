@@ -17,7 +17,7 @@
     <string name="prompt">The challenge today is to take a photo that shows:</string>
     <string name="challenge">Something that both is and is not</string>
     <string name="user">Test_User_123</string>
-    <string name="friend_1">Friend 1</string>
+    <string name="friend_1">Test_User_456</string>
     <string name="friend_2">Friend 2</string>
     <string name="friend_3">Friend 3</string>
     <string name="friend_4">Friend 4</string>
@@ -57,4 +57,9 @@
     <string name="r_friend">Report Friend</string>
     <string name="v_profile">View Profile</string>
     <string name="rec_mess">Recent Messages</string>
+    <string name="ex_mess_1">Subject:Hello</string>
+    <string name="ex_mess_2">Example Message 2</string>
+    <string name="ex_mess_3">Example Message 3</string>
+    <string name="subject">Subject: Hello</string>
+    <string name="test_mess">This is a test message</string>
 </resources>

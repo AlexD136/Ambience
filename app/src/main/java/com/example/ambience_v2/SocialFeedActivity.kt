@@ -28,6 +28,15 @@ class SocialFeedActivity : AppCompatActivity() {
             showPopupMenu(view)
         }
 
+        //Fetches the location of exMess1
+        val rightSideMenuLayout = findViewById<LinearLayout>(R.id.rightSideMenu)
+        val exMess1 = rightSideMenuLayout.findViewById<TextView>(R.id.exMess1)
+
+        exMess1.setOnClickListener { view: View ->
+            showPopupMenu2(view)
+        }
+
+
         //Fetches the location of ids required
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
         val menuImageView = findViewById<ImageView>(R.id.menuImageView)
@@ -80,6 +89,16 @@ class SocialFeedActivity : AppCompatActivity() {
     private fun showPopupMenu(view: View) {
         val inflater = LayoutInflater.from(this)
         val popupView = inflater.inflate(R.layout.f_op_menu, null)
+
+        val popupMenuBuilder = AlertDialog.Builder(this)
+        popupMenuBuilder.setView(popupView)
+        val popupMenu = popupMenuBuilder.create()
+        popupMenu.show()
+    }
+
+    private fun showPopupMenu2(view: View) {
+        val inflater = LayoutInflater.from(this)
+        val popupView = inflater.inflate(R.layout.m_op_menu, null)
 
         val popupMenuBuilder = AlertDialog.Builder(this)
         popupMenuBuilder.setView(popupView)

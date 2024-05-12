@@ -53,6 +53,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/logo"
+        android:background="@drawable/textbox"
         android:layout_marginTop="120dp"
         android:layout_marginStart="40dp"
         android:clickable="true"
@@ -146,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/active"
                 android:textColor="@color/active_green"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
@@ -170,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/inactive"
                 android:textColor="@color/inactive_red"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
@@ -194,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/active"
                 android:textColor="@color/active_green"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
@@ -218,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/inactive"
                 android:textColor="@color/inactive_red"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
     </LinearLayout>
@@ -486,6 +487,7 @@
             android:layout_height="50dp"
             android:src="@drawable/backarrow" />
 
+        <!-- Recent Messages -->
         <TextView
             android:id="@+id/recentMessTextView"
             android:layout_width="wrap_content"
@@ -497,6 +499,78 @@
             android:textStyle="bold"/>
 
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Example Message 1 -->
+            <TextView
+                android:id="@+id/exMess1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ex_mess_1"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <!-- X Icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xicon"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Example Message 2 -->
+            <TextView
+                android:id="@+id/exMess2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ex_mess_2"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <!-- X Icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xicon"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Example Message 3 -->
+            <TextView
+                android:id="@+id/exMess3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ex_mess_3"
+                android:textSize="16sp"
+                android:textColor="@color/logo"/>
+
+            <!-- X Icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xicon"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
