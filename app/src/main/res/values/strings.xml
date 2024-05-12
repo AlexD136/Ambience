@@ -56,4 +56,5 @@
     <string name="d_friend">Delete Friend</string>
     <string name="r_friend">Report Friend</string>
     <string name="v_profile">View Profile</string>
+    <string name="rec_mess">Recent Messages</string>
 </resources>

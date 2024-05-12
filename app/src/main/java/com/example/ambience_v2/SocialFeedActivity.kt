@@ -43,6 +43,20 @@ class SocialFeedActivity : AppCompatActivity() {
             drawerLayout.closeDrawer(GravityCompat.START)
         }
 
+        //Fetches the location of ids required
+        val mailIconImage = findViewById<ImageView>(R.id.mailIconImage)
+        val rBackArrow = findViewById<ImageView>(R.id.rBackArrow)
+
+        //Opens sidebar menu
+        mailIconImage.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
+        }
+
+        //Closes sidebar menu
+        rBackArrow.setOnClickListener {
+            drawerLayout.closeDrawer(GravityCompat.END)
+        }
+
         //Fetches the location of dailyChallengeTextView
         val dailyChallengeTextView = findViewById<TextView>(R.id.dailyChallengeTextView)
 

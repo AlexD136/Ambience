@@ -364,7 +364,7 @@
         android:scaleType="fitXY" />
 </RelativeLayout>
 
-    <!-- Sidebar menu -->
+    <!-- Left Sidebar Menu -->
     <LinearLayout
         android:id="@+id/sideMenu"
         android:layout_width="280dp"
@@ -464,4 +464,39 @@
             android:scaleType="fitXY"/>
     </LinearLayout>
 
+    <!-- Right Sidebar Menu -->
+    <LinearLayout
+        android:id="@+id/rightSideMenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/rBackArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/recentMessTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rec_mess"
+            android:textSize="16sp"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/logo"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
