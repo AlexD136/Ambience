@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Ambience</string>
-    <string name="ambience">Ambience</string>
+    <string name="app_name">Ambiance</string>
+    <string name="ambience">Ambiance</string>
     <string name="caption">Community Through Photography</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
