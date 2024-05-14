@@ -16,9 +16,7 @@ class SignUpActivity : AppCompatActivity() {
         loginTextView.setOnClickListener {
             // Create an Intent to navigate back to activity_main.xml
             val intent = Intent(this, MainActivity::class.java)
-            // Start the MainActivity
             startActivity(intent)
-            // Finish the current activity
             finish()
         }
     }

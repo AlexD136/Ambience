@@ -49,6 +49,7 @@ class MenuScreenDCActivity : AppCompatActivity() {
         }
     }
 
+    //Function for handling the countdown timer
     private fun startCountdownTimer() {
         countdownTimer = object : CountDownTimer(24 * 60 * 60 * 1000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
